@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/Person">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Hardik Rathod, Cloud Engineer specializing in AWS and IT solutions.">
+    <meta name="author" content="Hardik Rathod">
+    <meta name="keywords" content="Hardik Rathod, Cloud Engineer, AWS, Portfolio, IT Professional">
+    <title>Hardik Rathod - Cloud Engineer Portfolio</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader" aria-hidden="true">
+        <div class="spinner"></div>
+    </div>
+
+    <header role="banner">
+        <nav class="sidebar" aria-label="Main navigation">
+            <div class="sidebar-header">
+                <img src="IMG_2381.jpg" alt="Headshot of Hardik Rathod" class="headshot" loading="lazy">
+            </div>
+            <button class="hamburger" aria-label="Toggle navigation menu">☰</button>
+            <ul class="nav-links" role="navigation">
+                <li><button id="theme-toggle" aria-label="Toggle between light and dark theme"><i class="fas fa-adjust"></i> Dark Mode</button></li>
+                <li><a href="#home" class="active" aria-label="Go to Home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about" aria-label="Go to About Me"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#experience" aria-label="Go to Experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li><a href="#education" aria-label="Go to Education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="#skills" aria-label="Go to Skills"><i class="fas fa-tools"></i> Skills</a></li>
+                <li><a href="#projects" aria-label="Go to Projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li><a href="#certifications" aria-label="Go to Certifications"><i class="fas fa-certificate"></i> Certifications</a></li>
+                <li><a href="#interests" aria-label="Go to Interests"><i class="fas fa-heart"></i> Interests</a></li>
+                <li><a href="#contact" aria-label="Go to Contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section id="home" class="hero-section" aria-labelledby="home-heading">
+            <div class="hero">
+                <h1 id="home-heading" itemprop="name">Hardik Rathod</h1>
+                <p class="typewriter" aria-live="polite" itemprop="jobTitle">Cloud Engineer | AWS Specialist</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/hardikrathod9791" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="Visit Hardik Rathod's LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/hardik9791" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="Visit Hardik Rathod's GitHub Profile"><i class="fab fa-github"></i></a>
+                    <a href="mailto:cloud.hardikrathod@gmail.com" data-tooltip= "cloud.hardikrathod@gmail.com" title="cloud.hardikrathod@gmail.com" aria-label="Email Hardik Rathod"><i class="fas fa-envelope"></i></a>
+                    <span class="contact-icon" data-tooltip="Waterloo, Canada" aria-label="Location"><i class="fas fa-map-marker-alt"></i></span>
+                </div>
+                <a href="https://drive.google.com/file/d/1AGadGUEZcKcbSodloGYqnIHwfutCeqzh/view?usp=sharing" target="_blank" class="btn" download="Hardik_Resumé.pdf" aria-label="Download Hardik Rathod's Resume">Download Resume</a>
+                <a href= "#projects" class="btn secondary" aria-label="Explore My Work">Explore My Work</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-section" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading">About Me</h2>
+                <article itemprop="description">
+                    <p>I am an IT professional with expertise in cloud infrastructure, specializing in AWS and virtualization technologies. I have hands-on experience managing services like EC2, S3, RDS, VPC, and many more to deliver scalable, cost-efficient solutions.</p>
+                    <p>My strengths lie in optimizing performance, troubleshooting, and ensuring system reliability. With a foundation in Information Technology Engineering from Gujarat Technological University, advanced studies in Virtualization and Cloud Computing, and Big Data Solution architecture from Conestoga College, and a passion for solving complex challenges, I aim to expand my cloud engineering and DevOps skills, driving innovation and operational efficiency.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="experience" class="experience-section" aria-labelledby="experience-heading">
+            <div class="container">
+                <h2 id="experience-heading">Professional Experience</h2>
+                <ul class="timeline" role="list" itemprop="worksFor">
+                     <li role="listitem">
+                        <strong>Cloud Engineer & Freelance</strong><br>
+                        Self-Employed  | Kitchener, Ontario | August 2023 – Present<br><br>
+                        Architected and deployed 3+ production-ready cloud applications leveraging AWS Lambda, API Gateway, DynamoDB, S3, CloudFront, and Route 53 with 99.9% uptime.<br>
+                        Engineered automated CI/CD pipelines using AWS CodePipeline, CodeBuild, and CodeDeploy, reducing deployment time by 70% for Node.js applications.<br>
+                        Implemented Infrastructure as Code using Terraform and CloudFormation to provision reproducible, version-controlled cloud environments.<br>
+                        Designed and deployed secure, high-performance personal portfolio using S3 static hosting, CloudFront CDN, and Route 53 DNS with SSL/TLS encryption.<br>
+                    </li>
+                     <li role="listitem">
+                        <strong>Team Leader</strong><br>
+                        McDonald's Canada | Kitchener, Ontario | November 2024 – September 2026<br><br>
+                        Delivered exceptional customer service by resolving escalated issues in a high-pressure environment, ensuring user satisfaction.<br>
+                        Trained new personnel on operational standards, safety protocols, and efficient workflow management.<br>
+                        Managed complex requests with 100% accuracy while actively collaborating with management to enhance team communication and boost output by 10%.
+                    </li>
+                    <li role="listitem">
+                        <strong>Production Team Member</strong><br>
+                        Toyota Motor Manufacturing Canada | Cambridge, Ontario | June 2024 – September 2024<br><br>
+                        Assembled vehicle components on a production line with zero defects across 350+ units daily.<br>
+                        Conducted thorough inspections of parts and assemblies, achieving a 98% quality compliance rate.<br>
+                        Upheld safety with PPE and protocols, mitigating 10+ hazards monthly.<br>
+                        Adapted to 4+ station rotations per shift with no downtime, supporting a 15% increase in team output.   
+                    </li>
+                    <li role="listitem">
+                        <strong>IT Support Specialist</strong><br>
+                        Ample Infotech | Ahmedabad, India | August 2019 – April 2021<br><br>
+                        Provided first-level technical support, resolving 30+ network issues weekly with a 90% success rate.<br>
+                        Built a troubleshooting guide and tool, speeding diagnosis by 25%.<br>
+                        Reduced average ticket resolution time by 20% and improved first-call resolution rates by 15%, handling 50+ tickets monthly.   
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education" class="education-section" aria-labelledby="education-heading">
+            <div class="container">
+                <h2 id="education-heading">Education</h2>
+                <ul class="timeline" role="list" itemprop="alumniOf">
+                    <li role="listitem">
+                        <strong>Postgraduate Certificate in Big Data Solution Architecture</strong><br>
+                        Conestoga College | Kitchener, Canada | Graduated: August 2023<br><br>
+                        Courses: Data Analysis, Mathematics, Algorithms, R Programming, NoSQL, Programming for Big Data, RDBMS, MySQL Server, Software Quality, Hadoop, Hive, Kafka, Web Analytics and Business Intelligence, Tableau, Selenium Testing, Postman API
+                    </li>
+                    <li role="listitem">
+                        <strong>Postgraduate Certificate in Virtualization and Cloud Computing</strong><br>
+                        Conestoga College | Waterloo, Canada | Graduated: December 2022<br><br>
+                        Courses: Cloud Technologies, AWS, Azure, GCP, Containerization, Foundation of Virtualization, Desktop Virtualization, Server Virtualization, Hybrid Solutions, Integrating Disparate Solutions, Virtualization, Big Data, and Cloud, Migration Planning
+                    </li>
+                    <li role="listitem">
+                        <strong>Bachelor of Engineering in Information Technology</strong><br>
+                        Gujarat Technological University | Ahmedabad, India | Graduated: May 2019<br><br>
+                        Courses: C/C++, DBMS, Data Structure, Operating System, Computer Network, Computer Organization, Algorithms, OOPS, Java, Web Technology, DotNet Technology, Information and Network Security, AI, Python, Distributed DBMS 
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section" aria-labelledby="skills-heading">
+            <div class="container">
+                <h2 id="skills-heading">Technical Skills</h2>
+                <div class="skills-grid" role="list" itemprop="skills">
+                    <div class="skill" data-tooltip="Proficient in S3, EC2, VPC, CloudFront, etc" role="listitem">AWS</div>
+                    <div class="skill" data-tooltip="Containerization and orchestration" role="listitem">Docker</div>
+                    <div class="skill" data-tooltip="Infrastructure as Code" role="listitem">Terraform</div>
+                    <div class="skill" data-tooltip="Programming for Big Data" role="listitem">Python</div>
+                    <div class="skill" data-tooltip="Structured web content" role="listitem">HTML</div>
+                    <div class="skill" data-tooltip="Styling and layout" role="listitem">CSS</div>
+                    <div class="skill" data-tooltip="Interactive functionality" role="listitem">JavaScript</div>
+                    <div class="skill" data-tooltip="OOP for Java" role="listitem">Java</div>
+                    <div class="skill" data-tooltip="SQL, NoSQL, Hadoop, Hive" role="listitem">Database</div>
+                    <div class="skill" data-tooltip="Windows, Linux, macOS" role="listitem">OS</div>
+                    <div class="skill" data-tooltip="TCP/IP, DNS, VPN, etc" role="listitem">Networking</div>
+                    <div class="skill" data-tooltip="VMware, GitHub, RDP, Visual Studio Code" role="listitem">Tools</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section" aria-labelledby="projects-heading">
+            <div class="container">
+                <h2 id="projects-heading">Projects</h2>
+                <div class="projects-grid" id="project-container" aria-live="polite" role="list" itemprop="creator"></div>
+            </div>
+        </section>
+
+        <section id="certifications" class="certifications-section" aria-labelledby="certifications-heading">
+            <div class="container">
+                <h2 id="certifications-heading">Certifications</h2>
+                <div class="certification-item" role="list" itemprop="award">
+                    <a href="https://www.credly.com/badges/e7111f6c-b34e-4cb2-8c81-5cbbf344c515/public_url" target="_blank" rel="noopener noreferrer" aria-label="View AWS Certified Cloud Practitioner Badge">
+                        <img src="aws_cloud_practitioner.png" alt="AWS Certified Cloud Practitioner Badge" style="max-width: 150px;" loading="lazy">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="interests" class="interests-section" aria-labelledby="interests-heading">
+            <div class="container">
+                <h2 id="interests-heading">Interests</h2>
+                <p>I enjoy creating music and singing in my spare time.</p>
+                <a href="https://hyperfollow.com/hardikrathod" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Listen to Hardik Rathod's Music">Listen to My Music</a>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading">Contact Me</h2>
+                <form id="contact-form" action="#" method="POST" aria-label="Contact Hardik Rathod">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required aria-required="true"></textarea>
+                    </div>
+                    <button type="submit" class="btn" aria-label="Submit Contact Form">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo" itemprop="contactPoint" itemscope itemtype="http://schema.org/ContactPoint">
+        <p>© 2025 Hardik Rathod. All rights reserved.</p>
+        <meta itemprop="email" content="hardik@example.com">
+    </footer>
+
+    <button id="scroll-top" title="Scroll to top" aria-label="Scroll to top of page"><i class="fas fa-arrow-up"></i></button>
+    <div id="myModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+        <span class="close" aria-label="Close modal dialog">×</span>
+        <div class="modal-content">
+            <img id="modal-img" src="" alt="" loading="lazy">
+            <p id="modal-caption"></p>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
